@@ -1,0 +1,31 @@
+{
+  "name": "challenge-js-03",
+  "version": "1.0.0",
+  "description": "Factorial",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PlatziMaster/challenge-js-03.git"
+  },
+  "keywords": [
+    "JavaScript"
+  ],
+  "author": "Diego De Granda <degranda@platzi.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PlatziMaster/challenge-js-03/issues"
+  },
+  "homepage": "https://github.com/PlatziMaster/challenge-js-03#readme",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  },
+  "jest": {
+    "verbose": true,
+    "transformIgnorePatterns": [
+      "<rootDir>/(node_modules)/"
+    ]
+  }
+}
