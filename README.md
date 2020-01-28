@@ -29,4 +29,4 @@ Debes hacer un "Fork" de este proyecto, revolver los problemas y crear un Pull R
 Si alguien quiere agregar o mejorar algo, lo invito a colaborar directamente en este repositorio: [challenge-javascript-03](https://github.com/platzimaster/challenge-javascript-03/)
 
 ### Licencia
-challenge-javascript-01 se lanza bajo la licencia [MIT](https://opensource.org/licenses/MIT).
+challenge-javascript-03 se lanza bajo la licencia [MIT](https://opensource.org/licenses/MIT).
