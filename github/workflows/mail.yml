@@ -1,4 +1,4 @@
-name: Test triangleArea function
+name: Factorial
 
 on: [pull_request]
 
