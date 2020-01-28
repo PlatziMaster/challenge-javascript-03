@@ -18,9 +18,9 @@ npm run test
 
 Genera una función que devuelve numero factorial que se le pase como parametro. Ejemplo: 
 
-5 = 120
-9 = 362 880
-15 = 1 307 674 368 000
+5 = 120, 
+9 = 362 880, 
+15 = 1 307 674 368 000. 
 
 ### Enviar solución de reto
 Debes hacer un "Fork" de este proyecto, revolver los problemas y crear un Pull Request hacia este repositorio.
