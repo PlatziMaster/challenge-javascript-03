@@ -30,3 +30,13 @@ Si alguien quiere agregar o mejorar algo, lo invito a colaborar directamente en 
 
 ### Licencia
 challenge-javascript-03 se lanza bajo la licencia [MIT](https://opensource.org/licenses/MIT).
+
+#### Factorial
+
+Aplique la Memoización para resolver este reto, esto quiere decir que 
+vamos a guardar el resultado de una función
+  !12 = 12 *11 *10 .... *1
+  !6 = 6* 5 *4 *3 *2 *1
+
+Si calculamos el factorial de 12 taqmbiene estamos calculando el
+factorial de todos los demas números atras
