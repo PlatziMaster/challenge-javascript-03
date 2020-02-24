@@ -1,5 +1,5 @@
 var prompt = require('prompt');
-var factorial = require('./utils/factorial')
+var {factorial} = require('./utils/factorial')
 
 prompt.start();
 console.log('Ingresa un número que desees saber su factorial: ')
