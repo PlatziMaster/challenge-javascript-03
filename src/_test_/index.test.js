@@ -1,4 +1,4 @@
-const factorial = require('../index');
+const factorial = require('../factorial');
 
 describe('factorial', () => {
   it('Debe calcular el numer factorial', () => {
