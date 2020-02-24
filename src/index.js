@@ -1,5 +1,9 @@
-const factorial = (number) => {
-    
-  }
+var prompt = require('prompt');
+var {factorial} = require('./utils/factorial')
 
-  module.exports = factorial;
+prompt.start();
+console.log('Ingresa un número que desees saber su factorial: ')
+prompt.get(['number'], function (err, result) {
+  console.log('  Número: ' + result.number);
+  console.log('  factorial: ' + factorial(result.number));
+});
