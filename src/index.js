@@ -13,6 +13,4 @@ const factorial = (number) => {
     return result
   }
 
-  factorial(5)
-
   module.exports = factorial;
