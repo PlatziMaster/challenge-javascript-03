@@ -1,16 +1,15 @@
 const factorial = (number) => {
   let result
     if(number === 0 || number === 1){
-      result = 1
+      result = 1;
     }
     else{
       result = number
       for (let index = 1; index < number; index++) {
-        result = result * (number - index)
+        result *= index;
       }
     }
-    console.log(`El factor de ${number} es ${result}`)
-    return result
+    return result;
   }
 
   module.exports = factorial;
