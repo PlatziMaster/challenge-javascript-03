@@ -1,6 +1,6 @@
 const factorial = (number) => {
-  var total = 1; 
-	for ( i = 1; i <= number; i++ ) total = total * i; 
+  let total = 1; 
+	for ( let i = 2; i <= number; i++ ) total *= i; 
 	return total;     
 }
 
