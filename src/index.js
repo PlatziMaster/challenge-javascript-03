@@ -1,7 +1,3 @@
-const factorial = (number) => {
-  let result = 1, i = number;
-  for (let i = number; i >= 2; i--) result = result * i;
-  return result;
-}
+const factorial = (number) => number > 1 ? number * factorial(number -1) : number
 
 module.exports = factorial;
