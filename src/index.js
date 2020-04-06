@@ -1,3 +1,3 @@
-const factorial = (number) => number === 0 ? 1 : number > 1 ? number * factorial(number -1) : number;
+const factorial = (number) => number === 0 ? 1 : number * factorial(number -1);
 
 module.exports = factorial;
