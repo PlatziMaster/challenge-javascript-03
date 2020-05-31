@@ -28,5 +28,6 @@
     "transformIgnorePatterns": [
       "<rootDir>/(node_modules)/"
     ]
-  }
+  },
+  "dependencies": {}
 }
