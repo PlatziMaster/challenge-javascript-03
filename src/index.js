@@ -3,9 +3,7 @@ const factorial = (number) => {
   for (let i = number; i > 0; i--) {
     factorial = factorial * i;
   }
-  console.log(factorial);
+  return factorial;
 };
-
-factorial(8);
 
 module.exports = factorial;
