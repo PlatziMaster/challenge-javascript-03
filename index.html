@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Reto javascript-3</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+
+    <style>
+
+      .codigo {
+        font-family: 'Fira Sans', sans-serif;
+        color: #5e6472;
+      }
+
+
+     
+    </style>
+  </head>
+  <body>
+    <div class="container"> <br/>
+      <h1 class="d-flex justify-content-center">Funciones recursivas Challenge javascript-3</h1> <br/>
+      
+
+      <div class="accordion" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left d-flex justify-content-center" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <h3>Definición de factorial</h3> 
+        </button>
+      </h2>
+    </div>
+
+    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+       <p>El factorial de un entero positivo n, se define en principio como el producto de todos los números enteros positivos desde 1 (es decir, los números naturales) hasta n. Por ejemplo:</p>
+
+      <p> 5! = 1 * 2 * 3 * 4 * 5 = 120</p>
+      <p> 8! =  1 * 2 * 3 * 4 * 5 * 6 * 7 * 8 = 40.320 </p>
+      <p>definición de <a href="https://es.wikipedia.org/wiki/Factorial#:~:text=Podemos%20definir%20el%20factorial%20de,menores%20o%20iguales%20que%20n.">wikipedia</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left collapsed d-flex justify-content-center" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          <h3> Función factorial resuelta</h3>
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+        <p>
+           const factorial = (number) => {
+
+           <br/>
+     
+            if (number === 1 || number === 0) { <br/>
+              return 1 <br/>
+            }    <br/><br/>
+
+            number = number * factorial(number - 1)<br/>
+              return this.cache[number]<br/>
+            }
+            
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left collapsed d-flex justify-content-center" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          <h3>Agregando memoización a la función</h3> 
+        </button>
+      </h2>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+        
+
+          <p>Esto es la memoización: La capacidad de hacer que una función pura cuente con un mecanismo en el que pueda recordar valores ya computados para ahorrar recursos y tiempos. La idea es envolver una función en un mecanismo de caché, sin que el comportamiento de dicha función se vea alterado.</p>
+
+
+
+            <p class="codigo"> const factorial = (number) => {  </p><br/><br/>
+
+           Aca preguntamos si el caché de nuestra función (factorial) no esta definido, la funcion crea el cache como un objeto vacio. <br/><br/>
+    
+           <p class="codigo"> if (!this.cache) {<br/>
+              this.cache = {}<br/>
+            }</p><br/><br/>
+
+            Si el cache ya existe y tiene algun valor, retorne ese cache con su valor. <br/><br/>
+    
+            <p class="codigo">
+               if (this.cache[number]) {<br/>
+              return this.cache[number]<br/>
+            }
+            </p><br/><br/>
+
+
+
+             <p class="codigo">
+                if (number === 1 || number === 0) {<br/>
+              return 1<br/>
+            } 
+             </p>   <br/>
+
+            y aca se usa el cache y su valor para hacer los calculos sucesivos del factorial (this.cache[number]) <br/><br/>
+
+            <p class="codigo"> this.cache[number] = number * factorial(number - 1)<br/>
+              return this.cache[number]<br/>
+            }</p> <br/><br/>
+
+           <p> una vez hecho un calculo, en la función queda guardada en cache los calculos realizados para que cuando se vuelva a llamar la función, esta ya no haga los calculos innecesarios pues ya es están guardados.</p>
+           
+        
+
+        <p>La explicación la tomé de <a href="https://elabismodenull.wordpress.com/2017/02/20/programacion-funcional-en-javascript-la-memoizacion/" target="blank"> el abismo del null </a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+   
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
