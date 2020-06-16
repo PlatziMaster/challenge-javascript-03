@@ -57,20 +57,37 @@
     </div>
     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
       <div class="card-body">
-        <p>
-           const factorial = (number) => {
 
-           <br/>
-     
-            if (number === 1 || number === 0) { <br/>
-              return 1 <br/>
-            }    <br/><br/>
+        <p>La recursividad es la capacidad de una función de llamarse a sí misma.</p>
+        <br/>
+        <p>Las funciones recursivas tienen las siguientes características.</p>
+        <ul>
+          <li> <p>Se llaman a sí mismas.</p></li>
+           <li> <p>Tienen de argumento un valor que cambio por cada iteración</p></li>
+            <li> <p>Regresan algún valor definido en cada iteración</p></li>
+             <li> <p>Tienen una condicional que define el fin del ciclo</p></li>
+              <li> <p>Manejan un stack que es el orden de las ejecuciones de las iteraciones de la función, empezando por la última a llamar.</p></li>
 
-            number = number * factorial(number - 1)<br/>
-              return this.cache[number]<br/>
-            }
-            
-        </p>
+        </ul>
+        <p>Para el caso de la factorial se puede solucionar de dos maneras:</p><br/><br/>
+        <h3>SOLUCIÓN ITERATIVA (Mediante un ciclo for)</h3>
+
+          <figure>
+            <img src="assets/recursivo.jpg" alt="">
+          </figure><br/><br/>
+
+        <h3>SOLUCIÓN RECURSIVA (Función recursiva) </h3>
+         <figure>
+            <img src="assets/recursivo.jpg" alt="">
+          </figure><br/><br/>
+
+        <h3>ANALIZANDO LA EJECUCIÓN: </h3>
+        <figure>
+            <img src="assets/recursivo.jpg" alt="">
+          </figure>   
+
+
+        
       </div>
     </div>
   </div>
@@ -79,7 +96,7 @@
       <h2 class="mb-0">
         <button class="btn btn-link btn-block text-left collapsed d-flex justify-content-center" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
           <h3>Agregando memoización a la función</h3> 
-        </button>
+        </button> 
       </h2>
     </div>
     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
