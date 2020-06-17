@@ -4,7 +4,8 @@
   "description": "Factorial",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "fact":"node src/index.js"
   },
   "repository": {
     "type": "git",
@@ -13,7 +14,7 @@
   "keywords": [
     "JavaScript"
   ],
-  "author": "Diego De Granda <degranda@platzi.com>",
+  "author": "Isaac",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/PlatziMaster/challenge-js-03/issues"
