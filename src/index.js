@@ -1,9 +1,7 @@
 const factorial = (number) => {
   let fact = 1
-  let i = 1
-  while (i <= number) {
-    fact = fact * i
-    i += 1
+  for (let index = 1; index < number + 1; index++) {
+    fact = fact * index
   }
   return fact
   }
