@@ -1,14 +1,9 @@
 const factorial = (number) => {
-
-    if (number == 0)
-    {
-      return 1;
-    }
-    else
-    {
-      factorial = number * factorial(number -1);
-      return factorial;
-    }
-  }
+    
+  if (number === 0){ 
+		return 1; 
+	}
+	return number * factorial (number-1); 
+}
 
   module.exports = factorial;
