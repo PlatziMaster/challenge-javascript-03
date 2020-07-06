@@ -1,5 +1,13 @@
 const factorial = (number) => {
-    
+  let suma = 1;
+  if(number < 2) {
+    return suma;
+  } else {
+    while (number > 1) {
+      suma = suma * number;
+      number = number - 1
+    }
   }
-
-  module.exports = factorial;
+  return suma;
+}
+module.exports = factorial;
