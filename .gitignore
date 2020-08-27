@@ -1,3 +1,6 @@
+# Dependecies locks
+package-lock.json
+
 # Logs
 logs
 *.log
